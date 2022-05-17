@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_RD_Donor_Name</fullName>
+    <active>false</active>
+    <description>If Frequency type = &apos;Recurring&apos;, Donor Name must be same with corresponding Recurring Donation</description>
+    <errorConditionFormula>AND (
+Text(Frequency_Type__c) = &apos;Recurring&apos;, 
+ Donor_Name__c  !=  Recurring_Donation__r.Donor_Name__c 
+)</errorConditionFormula>
+    <errorDisplayField>Donor_Name__c</errorDisplayField>
+    <errorMessage>Donor Name is different than RD&apos;s Donor Name</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_RD_Donation_Amount</fullName>
+    <active>true</active>
+    <description>If Frequency type = &apos;Recurring&apos;, Donation Amount must be same with corresponding Recurring Donation</description>
+    <errorConditionFormula>AND (
+Text(Frequency_Type__c) = &apos;Recurring&apos;, 
+ Donation_Amount__c !=  Recurring_Donation__r.Amount__c 
+)</errorConditionFormula>
+    <errorDisplayField>Donation_Amount__c</errorDisplayField>
+    <errorMessage>Donation Amount is different than RD&apos;s Amount</errorMessage>
+</ValidationRule>

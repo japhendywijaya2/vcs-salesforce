@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Reason_Validation</fullName>
+    <active>false</active>
+    <description>When the Cancel VR checkbox is true, the cancellation reason text box cannot be blank</description>
+    <errorConditionFormula>AND(
+    ISBLANK( Others_Please_Indicate__c ),
+    Cancel_VR__c = True 
+)</errorConditionFormula>
+    <errorDisplayField>Others_Please_Indicate__c</errorDisplayField>
+    <errorMessage>Please state a reason for the cancellation</errorMessage>
+</ValidationRule>

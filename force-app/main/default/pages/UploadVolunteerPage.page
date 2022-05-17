@@ -1,0 +1,43 @@
+<apex:page standardController="Volunteer_Request__c" extensions="UploadVolunteerController" lightningStylesheets="true">
+    <apex:form >
+        <apex:pagemessages />
+        <apex:pageBlock >
+            <apex:pageBlockSection columns="5"> 
+                <apex:inputFile value="{!csvFileBody}"  filename="{!csvAsString}"/>
+                <apex:commandButton value="Import Volunteer" action="{!importCSVFile}" />
+                <apex:commandButton value="Back to VR" action="{!back}" />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:pageBlock id="pbList" >
+           <apex:pageBlockSection columns="1" title="Report">
+              <apex:pageBlockSectionItem >
+                  <apex:outputText value="Total Record Upload: "></apex:outputText>
+                  <apex:outputText value="{!totalData}"></apex:outputText>
+              </apex:pageBlockSectionItem>
+               <apex:pageBlockSectionItem >
+                  <apex:outputText value="Total Proceed: "></apex:outputText>
+                  <apex:outputText value="{!totalProceed}"></apex:outputText>
+              </apex:pageBlockSectionItem>
+               <apex:pageBlockSectionItem >
+                  <apex:outputText value="Total Success: "></apex:outputText>
+                  <apex:outputText value="{!totalSuccess}"></apex:outputText>
+              </apex:pageBlockSectionItem>
+               <apex:pageBlockSectionItem >
+                  <apex:outputText value="Total Failed: "></apex:outputText>
+                  <apex:outputText value="{!totalFailed}"></apex:outputText>
+              </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection id="pbError" columns="1" title="Error" rendered="{!strInfo != null}">
+                <apex:outputText value="{!strInfo}" label="" style="" escape="false" ></apex:outputText>
+            </apex:pageBlockSection>
+           <apex:pageBlockSection title="Volunteers Uploaded" columns="1">
+           <apex:pageblocktable value="{!volunteerlist}" var="acc" title="Volunteers Uploaded">
+              <!--apex:column value="{!acc.Programme_Event__c}" /-->
+              <apex:column value="{!acc.Volunteer_Name_upload__c}" />
+              <apex:column value="{!acc.Email_upload__c}" />
+              <apex:column value="{!acc.Mobile__c}" />
+           </apex:pageblocktable>
+           </apex:pageBlockSection>
+       </apex:pageBlock>
+   </apex:form>
+</apex:page>

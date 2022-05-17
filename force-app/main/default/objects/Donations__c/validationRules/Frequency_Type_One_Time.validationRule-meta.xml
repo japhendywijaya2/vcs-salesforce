@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Frequency_Type_One_Time</fullName>
+    <active>true</active>
+    <description>Frequency Type One-time can not have a Recurring Donation id</description>
+    <errorConditionFormula>AND(
+TEXT( Frequency_Type__c ) = &apos;One-time&apos;,
+NOT( ISBLANK(Recurring_Donation__c) )
+)</errorConditionFormula>
+    <errorDisplayField>Recurring_Donation__c</errorDisplayField>
+    <errorMessage>Frequency Type : &apos;One-time&apos; can&apos;t have recurring donation</errorMessage>
+</ValidationRule>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_status_cancelled</fullName>
+        <field>Request_status__c</field>
+        <literalValue>Cancelled</literalValue>
+        <name>Update status= cancelled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>VR_Status_Ended</fullName>
+        <field>Request_status__c</field>
+        <literalValue>Ended</literalValue>
+        <name>VR Status: Ended</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>VR_Status_Started</fullName>
+        <field>Request_status__c</field>
+        <literalValue>Started</literalValue>
+        <name>VR Status: Started</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update status%3D cancelled</fullName>
+        <actions>
+            <name>Update_status_cancelled</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Volunteer_Request__c.Cancel_VR__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Volunteer_Request__c.Others_Please_Indicate__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Update status= cancelled, when Cancel Vr and Cancel Reason (Please Indicate)= ture</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>VR%3A Ended</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Volunteer_Request__c.End_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Volunteer_Request__c.End_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Volunteer_Request__c.Request_status__c</field>
+            <operation>notEqual</operation>
+            <value>Completed,Cancelled</value>
+        </criteriaItems>
+        <description>VMS: Volunteer Request</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>VR_Status_Ended</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Volunteer_Request__c.End_Date__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>VR%3A Started</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Volunteer_Request__c.Start_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Volunteer_Request__c.Start_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Volunteer_Request__c.Request_status__c</field>
+            <operation>notEqual</operation>
+            <value>Completed,Cancelled</value>
+        </criteriaItems>
+        <description>VMS: Volunteer Request</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>VR_Status_Started</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Volunteer_Request__c.Start_Date__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

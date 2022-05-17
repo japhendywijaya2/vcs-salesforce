@@ -1,0 +1,25 @@
+<apex:page controller="AttendanceController" tabStyle="Attendance__c" lightningStylesheets="true" title="Attendance Import">  
+    <apex:form ><apex:pageBlock id="main" title="Attendance Upload">
+        
+        <apex:pageBlockButtons location="bottom" >
+            
+        </apex:pageBlockButtons>
+        <apex:messages style="border: 1px solid red;padding:5px;" />        
+        <apex:pageBlockSection columns="1" id="formfile" title="File Upload Form" collapsible="false">
+            <apex:outputLabel >Please select a csv file 
+                <apex:inputFile value="{!fileCsv}" title="CSV File" /> 
+                <apex:commandButton action="{!upload}" value="Submit" status="status1"  /> 
+            </apex:outputLabel>
+            
+            <br />
+            <apex:actionStatus id="status1" startStyle="text-align:center;font-weight:bold;color: blue;" startText="Processing, please wait ... " stopText=""></apex:actionStatus>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection collapsible="false" columns="1" id="result" title="Result">
+            <apex:outputText >TOTAL DATA : {!TotalData}</apex:outputText>
+            <apex:pageBlockTable value="{!mapErrors}" var="res" width="auto">
+                <apex:column headerValue="Row" value="{!res}" />
+                <apex:column headerValue="Error" value="{!mapErrors[res]}" />
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock></apex:form>
+</apex:page>

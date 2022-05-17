@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enquiry_ISS</fullName>
+    <active>true</active>
+    <description>This record type is for ISS</description>
+    <label>Enquiry - ISS</label>
+    <picklistValues>
+        <picklist>Case_Type__c</picklist>
+        <values>
+            <fullName>Long</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Citizenship__c</picklist>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG Citizen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enquiry_Status__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proceed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gender__c</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ID_Type__c</picklist>
+        <values>
+            <fullName>BC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NRIC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_Category__c</picklist>
+        <values>
+            <fullName>College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lower Primary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upper Primary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level__c</picklist>
+        <values>
+            <fullName>K1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PreU 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PreU 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PreU 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pri 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pri 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pri 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pri 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pri 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pri 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sec 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sec 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sec 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sec 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sec 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uni 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uni 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uni 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uni 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uni 5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_of_Hearing_Loss__c</picklist>
+        <values>
+            <fullName>Aided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unaided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MOE_FAS__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mode_of_Enquiry__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Text Message</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walk-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RelationshipToClient__c</picklist>
+        <values>
+            <fullName>Brother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Father</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FosterParent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grandfather</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grandmother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guardian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neighbour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others%2C please specify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relatives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sister</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teacher</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Services__c</picklist>
+        <values>
+            <fullName>Audiological Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counseling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FinanceAsst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Learning Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OtherServices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speech Therapy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Aids__c</picklist>
+        <values>
+            <fullName>BAHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cochlear Implants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FM %2F Roger System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hearing Aids</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

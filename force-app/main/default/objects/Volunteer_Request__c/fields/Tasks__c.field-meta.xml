@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tasks__c</fullName>
+    <externalId>false</externalId>
+    <label>Description of Duties</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Booth Assistants</fullName>
+                <default>false</default>
+                <label>Booth Assistants</label>
+            </value>
+            <value>
+                <fullName>Event Facilitators</fullName>
+                <default>false</default>
+                <label>Event Facilitators</label>
+            </value>
+            <value>
+                <fullName>Information &amp; Redemption Booth</fullName>
+                <default>false</default>
+                <label>Information &amp; Redemption Booth</label>
+            </value>
+            <value>
+                <fullName>Photographer</fullName>
+                <default>false</default>
+                <label>Photographer</label>
+            </value>
+            <value>
+                <fullName>Registration Booth</fullName>
+                <default>false</default>
+                <label>Registration Booth</label>
+            </value>
+            <value>
+                <fullName>Stage Crew</fullName>
+                <default>false</default>
+                <label>Stage Crew</label>
+            </value>
+            <value>
+                <fullName>Ushers</fullName>
+                <default>false</default>
+                <label>Ushers</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

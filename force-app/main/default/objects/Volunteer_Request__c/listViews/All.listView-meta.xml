@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>Request_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Request_status__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>Engagement_Type_F__c</columns>
+    <columns>Number_of_Volunteer_Accepted__c</columns>
+    <columns>Number_of_Volunteers_Required__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

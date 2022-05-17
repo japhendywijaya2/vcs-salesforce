@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_alert_enquiry_client</fullName>
+        <description>Email alert enquiry client</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Client_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Client_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_alert_enquiry_client</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_alert_enquiry_referrer</fullName>
+        <description>Email alert enquiry referrer</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Client_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Email_Refererrer__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_alert_enquiry_referrer</template>
+    </alerts>
+    <rules>
+        <fullName>Email alert enquiry client submit</fullName>
+        <actions>
+            <name>Email_alert_enquiry_client</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Enquiry__c.Client_Email__c</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Enquiry__c.ClientNameEntered__c</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <description>send email varification code and referral link after submit new enquiry</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email alert enquiry referrer</fullName>
+        <actions>
+            <name>Email_alert_enquiry_referrer</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Enquiry__c.Email_Refererrer__c</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Enquiry__c.Full_Name_Referrer__c</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <description>send email varification code and referral link after submit new enquiry</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

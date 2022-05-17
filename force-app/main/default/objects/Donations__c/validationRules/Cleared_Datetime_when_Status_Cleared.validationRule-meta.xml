@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cleared_Datetime_when_Status_Cleared</fullName>
+    <active>true</active>
+    <description>Cleared Datetime must have value when Donation Status is cleared</description>
+    <errorConditionFormula>AND(   
+  TEXT( Donation_Status__c ) = &quot;Cleared&quot;,  
+  ISBLANK( Cleared_Datetime__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Cleared_Datetime__c</errorDisplayField>
+    <errorMessage>Please enter a value when Donation Status is Cleared</errorMessage>
+</ValidationRule>

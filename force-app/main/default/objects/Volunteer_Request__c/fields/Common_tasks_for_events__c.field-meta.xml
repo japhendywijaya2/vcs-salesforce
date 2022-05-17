@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Common_tasks_for_events__c</fullName>
+    <externalId>false</externalId>
+    <label>Common tasks for events</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ushers</fullName>
+                <default>false</default>
+                <label>Ushers</label>
+            </value>
+            <value>
+                <fullName>Registration Booth</fullName>
+                <default>false</default>
+                <label>Registration Booth</label>
+            </value>
+            <value>
+                <fullName>Photographer</fullName>
+                <default>false</default>
+                <label>Photographer</label>
+            </value>
+            <value>
+                <fullName>Stage Crew</fullName>
+                <default>false</default>
+                <label>Stage Crew</label>
+            </value>
+            <value>
+                <fullName>Event Facilitators</fullName>
+                <default>false</default>
+                <label>Event Facilitators</label>
+            </value>
+            <value>
+                <fullName>Information &amp; Redemption Booth</fullName>
+                <default>false</default>
+                <label>Information &amp; Redemption Booth</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

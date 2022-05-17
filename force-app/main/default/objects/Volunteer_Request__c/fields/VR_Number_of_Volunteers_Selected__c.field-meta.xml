@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Number_of_Volunteers_Selected__c</fullName>
+    <externalId>false</externalId>
+    <label>VR Number of Volunteers Selected</label>
+    <summaryFilterItems>
+        <field>Assigned_Volunteer__c.Assignee_Status__c</field>
+        <operation>equals</operation>
+        <value>Selected</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Assigned_Volunteer__c.Volunteer_Request__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

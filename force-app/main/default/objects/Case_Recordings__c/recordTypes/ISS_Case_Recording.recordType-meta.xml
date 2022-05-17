@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISS_Case_Recording</fullName>
+    <active>true</active>
+    <description>This is used for ISS case recording notes</description>
+    <label>ISS Case Recording</label>
+    <picklistValues>
+        <picklist>Client_Behaviour__c</picklist>
+        <values>
+            <fullName>1-Very poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2-Poor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3-Good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4-Very good</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5-Excellent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Client_Emotion__c</picklist>
+        <values>
+            <fullName>1-Not stable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2-Quite stable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3-Stable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4-Quite stable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5-Very stable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Engagement_Level__c</picklist>
+        <values>
+            <fullName>1-Not engaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2-Quite disengaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3-Engaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4-Quite engaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5-Very engaged</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Objectives_Met__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outcome_Status__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Negative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Positive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

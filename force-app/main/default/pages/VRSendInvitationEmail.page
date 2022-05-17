@@ -1,0 +1,70 @@
+<apex:page standardController="Volunteer_Request__c" extensions="VRSendInvitationEmailController" lightningStyleSheets="true" tabStyle="Volunteer_Request__c">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <style type="text/css">
+        div.dataTables_wrapper {
+            width: 95%;
+            margin: 0 auto;
+        }
+    </style>   
+  <apex:form >
+  <apex:sectionHeader title="Volunteer Request" />
+  <apex:pageMessages ></apex:pageMessages>
+  <apex:pageBlock title="Send Assignment Invitation" mode="edit"  rendered="{!pageRender}">
+    
+    <apex:PageBlockSection >
+        <apex:pageBlockSectionItem ><apex:outputLabel value="Select Template"></apex:outputLabel><apex:selectList value="{!strSelected}" multiselect="false" size="1"><apex:selectOptions value="{!options}"/><apex:actionSupport event="onchange" action="{!PreviewEmail}"/></apex:selectList></apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem ><apex:outputlabel value="Request status"/><apex:outputlabel value="{!Invo.Request_status__c}"/> </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem ><apex:outputlabel value="Assignee Status"/><apex:inputField value="{!dParam.Assignee_Status__c}" ><apex:actionSupport event="onchange" action="{!refreshAssignedVolunteer}"/></apex:inputField></apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem ><apex:outputlabel value="Volunteer Request Name"/><apex:outputlabel value="{!Invo.Name}"/></apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem ><apex:outputlabel value="Request Title"/><apex:outputlabel value="{!Invo.Request_Title__c}"/></apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem ><apex:outputlabel value="Programme/Event Name"/><apex:outputlabel value="{!Invo.Programme_Event__r.Name}"/></apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem ><apex:outputlabel value="Key Objective"/><apex:outputlabel value="{!Invo.Key_Objective__c}"/> </apex:pageBlockSectionItem>
+        
+    </apex:PageBlockSection>
+    
+    <br/>
+    
+    <apex:pageBlockSection collapsible="true" columns="1" showHeader="true" title="Assigned Volunteer" >
+    
+    <apex:pageBlockTable value="{!ObjtblList }" var="v" width="100%" id="theTable" styleClass="opp-table">
+      <apex:column headerValue="Select">
+        <apex:inputCheckbox value="{!v.selected}"/>
+      </apex:column>
+      <apex:column value="{!v.rowObj.Contact__r.lastname}"/>
+      <apex:column value="{!v.rowObj.Contact__r.Email}"/>
+      <apex:column value="{!v.rowObj.Assignee_Status__c}"/>
+      <apex:facet name="footer">
+          <apex:panelGroup >
+              <apex:commandButton value="Select All" action="{!selectAll}" />
+              <apex:commandButton value="Unselect All" action="{!unselectAll}" />
+          </apex:panelGroup>
+      </apex:facet>
+    </apex:pageBlockTable>
+    
+    </apex:PageBlockSection>
+    
+    <apex:pageBlockButtons location="bottom">  
+    <apex:commandButton value="Send Email" action="{!sendEmailInBatch}" />&nbsp;&nbsp;
+    <apex:commandButton value="Back" action="{!back}" />
+    </apex:pageBlockButtons>
+    <apex:pageBlockSection columns="1" showHeader="true" title="Mail Information" collapsible="false">
+      <apex:inputText value="{!esub}" label="Subject" size="200"/>
+      <apex:inputTextarea richText="true" value="{!emsg}" label="Message"/>
+    </apex:pageBlockSection>
+  </apex:pageBlock>
+  </apex:form> 
+    <script type="text/javascript">
+        j$ = jQuery.noConflict();
+        j$(document).ready(function () {
+            j$('[id$=theTable]').DataTable( {
+                "bSort" : false,
+                "bPaginate": false,
+                "bFilter": false,
+                "bInfo": false,
+                "scrollY": 300,
+                "scrollX": true
+            } );
+        });  
+    </script> 
+</apex:page>

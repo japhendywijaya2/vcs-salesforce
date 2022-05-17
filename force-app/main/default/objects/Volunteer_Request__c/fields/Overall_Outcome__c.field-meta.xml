@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overall_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <label>Overall Outcome</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Planned</fullName>
+                <default>false</default>
+                <label>Planned</label>
+            </value>
+            <value>
+                <fullName>Partially Met</fullName>
+                <default>false</default>
+                <label>Partially Met</label>
+            </value>
+            <value>
+                <fullName>Completely Met</fullName>
+                <default>false</default>
+                <label>Completely Met</label>
+            </value>
+            <value>
+                <fullName>Not Met</fullName>
+                <default>false</default>
+                <label>Not Met</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

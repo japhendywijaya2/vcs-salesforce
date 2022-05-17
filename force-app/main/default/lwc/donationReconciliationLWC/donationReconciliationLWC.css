@@ -1,0 +1,22 @@
+.mainDiv {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.trKey { 
+    height: 45px;
+}
+
+.tdKey {
+    vertical-align: middle;
+    text-align: center ;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.required-field::after {
+    content: "*";
+    color: red;
+}

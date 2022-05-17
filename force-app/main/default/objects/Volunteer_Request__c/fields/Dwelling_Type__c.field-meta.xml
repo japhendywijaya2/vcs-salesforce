@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dwelling_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Dwelling Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-rm flat</fullName>
+                <default>false</default>
+                <label>1-rm flat</label>
+            </value>
+            <value>
+                <fullName>2-rm flat</fullName>
+                <default>false</default>
+                <label>2-rm flat</label>
+            </value>
+            <value>
+                <fullName>3-rm flat</fullName>
+                <default>false</default>
+                <label>3-rm flat</label>
+            </value>
+            <value>
+                <fullName>4-rm flat</fullName>
+                <default>false</default>
+                <label>4-rm flat</label>
+            </value>
+            <value>
+                <fullName>5-rm flat</fullName>
+                <default>false</default>
+                <label>5-rm flat</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

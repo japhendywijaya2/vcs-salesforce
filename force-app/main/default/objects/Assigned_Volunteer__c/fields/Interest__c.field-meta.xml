@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interest__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(INCLUDES(Contact__r.Volunteering_area_s_of_interest__c, &quot;Art and Craft&quot;), &quot;Art and Craft&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteering_area_s_of_interest__c, &quot;Cooking&quot;), &quot;Cooking&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteering_area_s_of_interest__c, &quot;Dance and Music&quot;), &quot;Dance and Music&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteering_area_s_of_interest__c, &quot;Gardening&quot;), &quot;Gardening&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteering_area_s_of_interest__c, &quot;Graphics Design&quot;), &quot;Graphics Design&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteering_area_s_of_interest__c, &quot;Information Technology&quot;), &quot;Information Technology&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteering_area_s_of_interest__c, &quot;Sport&quot;), &quot;Sport&quot;, NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Interest</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

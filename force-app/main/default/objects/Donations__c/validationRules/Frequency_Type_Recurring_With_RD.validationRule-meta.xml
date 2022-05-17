@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Frequency_Type_Recurring_With_RD</fullName>
+    <active>false</active>
+    <description>Frequency Type = Recurring, must have RD</description>
+    <errorConditionFormula>AND(
+TEXT( Frequency_Type__c ) = &apos;Recurring&apos;,
+ISBLANK( Recurring_Donation__c  )
+)</errorConditionFormula>
+    <errorDisplayField>Recurring_Donation__c</errorDisplayField>
+    <errorMessage>Complete this field</errorMessage>
+</ValidationRule>

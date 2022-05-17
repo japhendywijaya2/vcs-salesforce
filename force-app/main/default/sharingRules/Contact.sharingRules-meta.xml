@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>CA_Sharing_Contact</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CA Sharing Contact</label>
+        <sharedTo>
+            <role>Corporate_Affairs</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Donor__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Volunteer__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

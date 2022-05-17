@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Urgent_Request_Reasons_is_required</fullName>
+    <active>true</active>
+    <description>Urgent Request Reasonsis required when the Urgent request checkbox is true</description>
+    <errorConditionFormula>Urgent_Request__c = true &amp;&amp;  Urgent_Request_Reasons__c = null</errorConditionFormula>
+    <errorMessage>Please Enter Urgent Request Reasons or else Uncheck the  Urgent Request Reasons checkbox.</errorMessage>
+</ValidationRule>

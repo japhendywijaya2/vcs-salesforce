@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subcategory__c</fullName>
+    <externalId>false</externalId>
+    <label>Subcategory</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Shower Gel</fullName>
+                <default>false</default>
+                <label>Shower Gel</label>
+            </value>
+            <value>
+                <fullName>Hair Spray</fullName>
+                <default>false</default>
+                <label>Hair Spray</label>
+            </value>
+            <value>
+                <fullName>Soap Powder</fullName>
+                <default>false</default>
+                <label>Soap Powder</label>
+            </value>
+            <value>
+                <fullName>Lux Soap</fullName>
+                <default>false</default>
+                <label>Lux Soap</label>
+            </value>
+            <value>
+                <fullName>Toothpaste</fullName>
+                <default>false</default>
+                <label>Toothpaste</label>
+            </value>
+            <value>
+                <fullName>Basin</fullName>
+                <default>false</default>
+                <label>Basin</label>
+            </value>
+            <value>
+                <fullName>Stain Remover</fullName>
+                <default>false</default>
+                <label>Stain Remover</label>
+            </value>
+            <value>
+                <fullName>Dish Washing Paste</fullName>
+                <default>false</default>
+                <label>Dish Washing Paste</label>
+            </value>
+            <value>
+                <fullName>Shower Foam</fullName>
+                <default>false</default>
+                <label>Shower Foam</label>
+            </value>
+            <value>
+                <fullName>Hair Gel</fullName>
+                <default>false</default>
+                <label>Hair Gel</label>
+            </value>
+            <value>
+                <fullName>Detergent</fullName>
+                <default>false</default>
+                <label>Detergent</label>
+            </value>
+            <value>
+                <fullName>Camay</fullName>
+                <default>false</default>
+                <label>Camay</label>
+            </value>
+            <value>
+                <fullName>Listrine</fullName>
+                <default>false</default>
+                <label>Listrine</label>
+            </value>
+            <value>
+                <fullName>Pail</fullName>
+                <default>false</default>
+                <label>Pail</label>
+            </value>
+            <value>
+                <fullName>Scrub and Shine</fullName>
+                <default>false</default>
+                <label>Scrub and Shine</label>
+            </value>
+            <value>
+                <fullName>Comb</fullName>
+                <default>false</default>
+                <label>Comb</label>
+            </value>
+            <value>
+                <fullName>Disinfectant</fullName>
+                <default>false</default>
+                <label>Disinfectant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,147 @@
+<apex:page extensions="DonationReconcilController" standardController="Donations__c"  lightningStyleSheets="true">
+    
+        <apex:form id="myform">
+        <apex:pageMessages id="myMsg"/>
+            
+        <apex:pageBlock title="Donation Reconciliation">
+                <!-- apex:pageBlockSection columns="1" title="Please set the parameter" -->
+                <div style="width:fit-content; margin: auto; text-align: center; ">
+                    
+                    <table column="2">
+                        <tr class="trParameterSection">
+                            <td ><apex:outputLabel value="From" style="font-weight: bold;"/></td>
+                            <td class="tdParameterSection" ><apex:inputField value="{!donation.Donation_Date__c}" /></td>
+                        </tr>
+                        <tr class="trParameterSection">
+                            <td ><apex:outputLabel value="To" style="font-weight: bold;"/></td>
+                            <td class="tdParameterSection"><apex:inputField value="{!donation.Cleared_Date__c}"/></td>
+                        </tr>
+                        <tr class="trParameterSection">
+                            <td ><apex:outputLabel value="Payment Method" style="font-weight: bold;"/></td>
+                            <td class="tdParameterSection"><apex:inputField value="{!donation.Payment_Method__c}"/></td>
+                        </tr>
+                        <tr class="trParameterSection">
+                            <td ><apex:outputLabel style="font-weight: bold;" value="Donation Status"/></td>
+                            <td class="tdParameterSection"><apex:inputField value="{!donation.Donation_Status__c}"/></td>
+                        </tr>
+                        <tr class="trParameterSection">
+                            <td><apex:outputLabel style="font-weight: bold;" value="Frequency Type"/></td>
+                            <td class="tdParameterSection">
+                                <apex:inputCheckbox value="{!frequencyTypeOnetime}" title="One-Time" label="One-Time" />One-Time
+                                <apex:inputCheckbox value="{!frequencyTypeRecurring}" title="Recurring"/>Recurring
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <br/><br/>
+                    <!--apex:panelGrid width="100%" style="text-align: center" >
+                    <apex:panelGroup >
+                        <apex:outputLabel value="From" style="font-weight: bold;"/>
+                        <apex:inputField value="{!donation.Donation_Date__c}"/>
+                        <apex:outputLabel value="To" style="font-weight: bold;"/>
+                        <apex:inputField value="{!donation.Cleared_Date__c}"/>
+                    </apex:panelGroup>  
+                    <apex:panelGroup>
+                        <apex:outputLabel value="Payment Method" style="font-weight: bold;"/>
+                        <apex:inputField value="{!donation.Payment_Method__c}"/>
+                    </apex:panelGroup>
+                    <apex:panelGroup>
+                        <apex:outputLabel style="font-weight: bold;" value="Donation Status"/>
+                        <apex:inputField value="{!donation.Donation_Status__c}"/>
+                    </apex:panelGroup>
+                    <apex:panelGroup>
+                        <apex:outputLabel style="font-weight: bold;" value="Frequency Type"/>
+                        <apex:inputCheckbox value="{!frequencyTypeOnetime}" title="One-Time" label="One-Time" />One-Time
+                        <apex:inputCheckbox value="{!frequencyTypeRecurring}" title="Recurring"/>Recurring
+                    </apex:panelGroup>
+                  </apex:panelGrid -->
+                <!-- /apex:pageBlockSection -->    
+        
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Please set Status to update"> 
+            <!-- <apex:PageBlockSection columns="1" title="Please set Status to update"> -->
+                <div style="width:fit-content; margin: auto; text-align: center;">
+                    
+                    <table column="2">
+                        <tr class="trParameterSection">
+                            
+                            <td ><apex:outputLabel value="Select Payment Method" style="font-weight: bold;" /></td>
+                            <td class="tdParameterSection" ><apex:inputField value="{!donation1.Payment_Method__c}"/></td>
+                        </tr>
+                        <tr class="trParameterSection">
+                            <td ><apex:outputLabel value="Donation Status update to" style="font-weight: bold;" /></td>
+                            <td class="tdParameterSection"><apex:inputField value="{!donation1.Donation_Status__c}"/></td>
+                        </tr>
+                    </table>
+                </div>
+            
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton value="Search" action="{!search}"/>
+                    <apex:commandButton value="Back" action="{!back}"/>
+                </apex:pageBlockButtons>
+            <!-- </apex:PageBlockSection> -->
+        </apex:pageBlock>
+        
+        
+        <apex:pageBlock rendered="{!donationList!=null}">
+            <apex:pageBlockTable value="{!donationObjList}" var="d" id="myTbl">
+                <apex:column >
+                    <apex:inputCheckbox value="{!d.updated}">
+                        <apex:actionSupport event="onchange" rerender="myTbl" action="{!calculateSelected}"/>
+                    </apex:inputCheckbox>
+                </apex:column>
+                <apex:column headerValue="Donation No." >
+                    <apex:commandLink value="{!d.don.Name}" action="/{!d.don.Id}"/>
+                </apex:column>
+                <apex:column value="{!d.don.Donation_Date__c}" title="Donation Date" />
+                <apex:column value="{!d.don.Donor_Type__c}" title="Donor Type"/>
+                <apex:column value="{!d.don.Donor_Name__c}" title="Donor Name"/>
+                <apex:column value="{!d.don.Id_No__c}" title="ID no."/>
+                <apex:column value="{!d.don.Donation_Amount__c}" title="Amount"/>
+                <apex:column value="{!d.don.Donation_Status__c}" title="Donation Status"/>
+                <apex:column value="{!d.don.Cleared_Date__c}" title="Cleared Date"/>
+                <!-- <apex:column value="{!d.don.Channel_of_Donation__c}" title="Channel of Donation"/>
+                <apex:column value="{!d.don.Donation_Purpose__c}" title="Donation Purpose"/> -->
+                <apex:column value="{!d.don.Frequency_Type__c }" title="Frequency Type"/>
+                <apex:facet name="header">
+                <apex:panelGroup >
+                  <apex:outputLabel value="Total Donation"></apex:outputLabel>
+                  <apex:outputText value="{0, number,$###,###.00}" id="myNumberDisplay">
+                    <apex:param value="{!totalDonation}"/>
+                  </apex:outputText>
+                  <!--apex:outputText value="${!totalDonation}"></apex:outputText-->
+                  <br/>
+                  <apex:outputLabel value="Selected Donation"></apex:outputLabel>
+                  <apex:outputText value="{0, number,$###,###.00}" id="myNumberDisplay1">
+                    <apex:param value="{!selectedDonation}"/>
+                  </apex:outputText>
+                  <!--apex:outputText value="${!selectedDonation}"></apex:outputText-->
+                </apex:panelGroup>
+                
+                </apex:facet>
+                <apex:facet name="footer">
+                  <apex:panelGroup >
+                      <apex:commandButton value="Select All" action="{!selectAll}" />
+                      <apex:commandButton value="Unselect All" action="{!unselectAll}" />
+                  </apex:panelGroup>
+                </apex:facet>
+            </apex:pageBlockTable>
+            <apex:pageBlockButtons location="bottom"  rendered="{!donationList!=null}">
+                <apex:commandButton value="Save" action="{!save}"/>
+                <!--apex:commandButton value="Back" action="{!back}"/-->
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    
+    <style type="text/css">
+    	.tdParameterSection {
+        	text-align:left; 
+        }
+        
+        .trParameterSection {
+        	height: 40px
+        }
+    </style>
+</apex:page>

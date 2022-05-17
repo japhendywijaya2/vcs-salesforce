@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AVDuplicateError</fullName>
+        <categories>Assigned Volunteer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AVDuplicateError</shortDescription>
+        <value>This Volunteer already include in this request.</value>
+    </labels>
+    <labels>
+        <fullName>Donation_Programme_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Donation_Programme_URL</shortDescription>
+        <value>https://sadeaf-demo.interaktiv.sg/donate?programme=</value>
+    </labels>
+    <labels>
+        <fullName>Events_URL</fullName>
+        <categories>Landing Pages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Events URL</shortDescription>
+        <value>https://events.sadeaf.org.sg/</value>
+    </labels>
+    <labels>
+        <fullName>Landing_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Landing URL</shortDescription>
+        <value>https://sadeaf-demo.interaktiv.sg/</value>
+    </labels>
+    <labels>
+        <fullName>ParticipantDuplicateError</fullName>
+        <categories>ParticipantClass</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ParticipantDuplicateError</shortDescription>
+        <value>Duplicate participant detected.</value>
+    </labels>
+    <labels>
+        <fullName>VRSendEmailError1</fullName>
+        <categories>VRSendInvitationEmailController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VRSendEmailError1</shortDescription>
+        <value>No Volunteer Request Selected.</value>
+    </labels>
+    <labels>
+        <fullName>VRSendEmailError2</fullName>
+        <categories>VRSendInvitationEmailController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VRSendEmailError2</shortDescription>
+        <value>Error loading page. Please contact administrator. ERROR CODE:</value>
+    </labels>
+    <labels>
+        <fullName>VRSendEmailError3</fullName>
+        <categories>VRSendInvitationEmailController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VRSendEmailError3</shortDescription>
+        <value>Email template can&apos;t be viewed. Please select other email template.</value>
+    </labels>
+    <labels>
+        <fullName>VRSendEmailError4</fullName>
+        <categories>VRSendInvitationEmailController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VRSendEmailError4</shortDescription>
+        <value>VRSendEmailError4</value>
+    </labels>
+    <labels>
+        <fullName>VRSendEmailError5</fullName>
+        <categories>VRSendInvitationEmailController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VRSendEmailError5</shortDescription>
+        <value>Invalid Event.</value>
+    </labels>
+    <labels>
+        <fullName>VRSendEmailError6</fullName>
+        <categories>VRSendInvitationEmailController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VRSendEmailError6</shortDescription>
+        <value>Please select email template for sending email.</value>
+    </labels>
+</CustomLabels>

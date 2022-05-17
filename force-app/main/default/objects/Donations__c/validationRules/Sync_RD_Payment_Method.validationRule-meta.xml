@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_RD_Payment_Method</fullName>
+    <active>true</active>
+    <description>If Frequency type = &apos;Recurring&apos;, Payment Method must be same with corresponding Recurring Donation</description>
+    <errorConditionFormula>AND (
+Text(Frequency_Type__c) = &apos;Recurring&apos;, 
+Text(Payment_Method__c) !=  Text(Recurring_Donation__r.Payment_Method__c)
+)</errorConditionFormula>
+    <errorDisplayField>Payment_Method__c</errorDisplayField>
+    <errorMessage>Payment Method is different than RD&apos;s Payment Method</errorMessage>
+</ValidationRule>

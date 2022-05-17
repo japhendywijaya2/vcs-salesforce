@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Services__c</fullName>
+    <externalId>false</externalId>
+    <label>Services</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I&amp;R</fullName>
+                <default>false</default>
+                <label>I&amp;R</label>
+            </value>
+            <value>
+                <fullName>FinanceAsst</fullName>
+                <default>false</default>
+                <label>Financial Assistance</label>
+            </value>
+            <value>
+                <fullName>Employment</fullName>
+                <default>false</default>
+                <label>Employment</label>
+            </value>
+            <value>
+                <fullName>Counseling</fullName>
+                <default>false</default>
+                <label>Counseling</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Learning Support</fullName>
+                <default>false</default>
+                <label>Learning Support</label>
+            </value>
+            <value>
+                <fullName>Speech Therapy</fullName>
+                <default>false</default>
+                <label>Speech Therapy</label>
+            </value>
+            <value>
+                <fullName>Audiological Services</fullName>
+                <default>false</default>
+                <label>Audiological Services</label>
+            </value>
+            <value>
+                <fullName>OtherServices</fullName>
+                <default>false</default>
+                <label>Other Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

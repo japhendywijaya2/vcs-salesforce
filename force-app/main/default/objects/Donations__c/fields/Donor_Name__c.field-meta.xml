@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donor_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is the person who made the donation and paid for it</description>
+    <externalId>false</externalId>
+    <label>Donor Name</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>Contact.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.Donor_Account__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Donations</relationshipLabel>
+    <relationshipName>Donation</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

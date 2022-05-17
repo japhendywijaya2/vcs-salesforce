@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donor_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Will be filled by trigger</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Don&apos;t need to be manually filled, will be automatically overwritten by trigger,</inlineHelpText>
+    <label>Donor Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Donations</relationshipLabel>
+    <relationshipName>Donations</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Volunteer_changed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT(ISNEW()) ,  Contact__c != PRIORVALUE(Contact__c ))</errorConditionFormula>
+    <errorDisplayField>Contact__c</errorDisplayField>
+    <errorMessage>Can&apos;t change the volunteer name.</errorMessage>
+</ValidationRule>

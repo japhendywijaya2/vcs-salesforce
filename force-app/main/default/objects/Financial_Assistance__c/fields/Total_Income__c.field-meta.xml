@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Income__c</fullName>
+    <externalId>false</externalId>
+    <label>Total Income</label>
+    <summarizedField>Household_Income__c.Monthly_Salary__c</summarizedField>
+    <summaryForeignKey>Household_Income__c.FA_No__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Volunteer_Request__c</fullName>
+    <externalId>false</externalId>
+    <label>Activity/Event</label>
+    <referenceTo>Volunteer_Request__c</referenceTo>
+    <relationshipLabel>Assigned Volunteers</relationshipLabel>
+    <relationshipName>Assigned_Volunteers</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>true</trackHistory>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

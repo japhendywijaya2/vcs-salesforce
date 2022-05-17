@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_total_One_time_Expenses__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-total One-time Expenses</label>
+    <summarizedField>Expenses__c.Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Expenses__c.Expense_Type__c</field>
+        <operation>equals</operation>
+        <value>Expenses</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Expenses__c.Frequency__c</field>
+        <operation>equals</operation>
+        <value>One-time</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Expenses__c.FA_No__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>LightningBolt</label>
+    <navType>Standard</navType>
+    <tabs>standard-LightningBoltHome</tabs>
+    <tabs>Donations__c</tabs>
+    <tabs>Programme_Events__c</tabs>
+    <tabs>Assigned_Volunteer__c</tabs>
+    <tabs>Volunteer_Request__c</tabs>
+    <tabs>Recurring_Donation__c</tabs>
+    <tabs>Attendance__c</tabs>
+    <tabs>Enquiry__c</tabs>
+    <tabs>School_History__c</tabs>
+    <tabs>Question__c</tabs>
+    <tabs>Financial_Assistance__c</tabs>
+    <tabs>IEP__c</tabs>
+    <tabs>Employment_Support__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

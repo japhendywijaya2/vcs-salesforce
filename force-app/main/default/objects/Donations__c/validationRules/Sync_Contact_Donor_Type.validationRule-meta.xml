@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_Contact_Donor_Type</fullName>
+    <active>false</active>
+    <description>Field &apos;Donor Type&apos; must be same with corresponding Contact &apos;Donor Type&apos;</description>
+    <errorConditionFormula>Text(Donor_Type__c) != Text(Donor_Name__r.Donor_Type__c)</errorConditionFormula>
+    <errorDisplayField>Donor_Type__c</errorDisplayField>
+    <errorMessage>Donor Type is different than Contact&apos;s Donor Account Type</errorMessage>
+</ValidationRule>

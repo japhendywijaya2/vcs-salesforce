@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Cancellation_Vr_Email_to_Volunteer</fullName>
+        <description>Cancellation Vr  Email to Volunteer</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Volunteer_Request/Volunteer_Request_Canceled_v1</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_template_when_Assignee_status_is_Accepted</fullName>
+        <description>Email template when Assignee status is Accepted.</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Volunteer_Request/Assigned_Volunteer_Confirmation_Template_v1</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_to_Volunteer</fullName>
+        <ccEmails>modupallijyotshna@gmail.com</ccEmails>
+        <description>Send Email to Volunteer</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Volunteer_Request/Volunteer_Request_Invitation_v1</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Assignee_Status_Contacted</fullName>
+        <field>Assignee_Status__c</field>
+        <literalValue>Contacted</literalValue>
+        <name>Assignee Status: Contacted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Email_Send_TODAY</fullName>
+        <field>Email_Sent__c</field>
+        <formula>TODAY()</formula>
+        <name>Email Send: TODAY</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Assigned Volunteer Created</fullName>
+        <actions>
+            <name>Send_Email_to_Volunteer</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Assignee_Status_Contacted</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Email_Send_TODAY</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Assigned_Volunteer__c.Assignee_Status__c</field>
+            <operation>equals</operation>
+            <value>Selected</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Assigned_Volunteer__c.Email__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>VMS: Assigned Volunteer Created</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email alert to volunteer when Assignee status%3DCancelled</fullName>
+        <actions>
+            <name>Cancellation_Vr_Email_to_Volunteer</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Assigned_Volunteer__c.Assignee_Status__c</field>
+            <operation>equals</operation>
+            <value>Cancelled</value>
+        </criteriaItems>
+        <description>Cancellation Email will be sent to Volunteer</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email alert when  Av is accepted</fullName>
+        <actions>
+            <name>Email_template_when_Assignee_status_is_Accepted</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Assigned_Volunteer__c.Assignee_Status__c</field>
+            <operation>equals</operation>
+            <value>Accepted</value>
+        </criteriaItems>
+        <description>When Volunteer accepted the Invitation, Confirmation mail should be sent to Volunteer and record owner</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

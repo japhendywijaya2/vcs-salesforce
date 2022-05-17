@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Testing_field__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Testing_field for work flow</description>
+    <externalId>false</externalId>
+    <label>Testing field</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

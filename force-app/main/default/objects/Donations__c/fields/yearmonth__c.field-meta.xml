@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>yearmonth__c</fullName>
+    <description>mark for deletion. this was used to group donation per year month, so that tax receipt no can be restarted to 1 every month. The current logic is employing progressive method, so this field is not utilized anymore</description>
+    <externalId>false</externalId>
+    <label>(del) yearmonth</label>
+    <length>6</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

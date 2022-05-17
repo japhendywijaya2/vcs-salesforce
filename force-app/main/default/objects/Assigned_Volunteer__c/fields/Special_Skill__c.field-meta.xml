@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Skill__c</fullName>
+    <externalId>false</externalId>
+    <label>Special Skill</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Playing Musical Instruments</fullName>
+                <default>false</default>
+                <label>Playing Musical Instruments</label>
+            </value>
+            <value>
+                <fullName>Videography</fullName>
+                <default>false</default>
+                <label>Videography</label>
+            </value>
+            <value>
+                <fullName>Hair Styling/Cutting</fullName>
+                <default>false</default>
+                <label>Hair Styling/Cutting</label>
+            </value>
+            <value>
+                <fullName>Allied Health</fullName>
+                <default>false</default>
+                <label>Allied Health</label>
+            </value>
+            <value>
+                <fullName>Class 3 - Driving</fullName>
+                <default>false</default>
+                <label>Class 3 - Driving</label>
+            </value>
+            <value>
+                <fullName>Graphics Design</fullName>
+                <default>false</default>
+                <label>Graphics Design</label>
+            </value>
+            <value>
+                <fullName>Food Handling</fullName>
+                <default>false</default>
+                <label>Food Handling</label>
+            </value>
+            <value>
+                <fullName>Photography</fullName>
+                <default>false</default>
+                <label>Photography</label>
+            </value>
+            <value>
+                <fullName>Cooking</fullName>
+                <default>false</default>
+                <label>Cooking</label>
+            </value>
+            <value>
+                <fullName>Counselling</fullName>
+                <default>false</default>
+                <label>Counselling</label>
+            </value>
+            <value>
+                <fullName>Vocational Skills</fullName>
+                <default>false</default>
+                <label>Vocational Skills</label>
+            </value>
+            <value>
+                <fullName>Class 3</fullName>
+                <default>false</default>
+                <label>Class 3</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

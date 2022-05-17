@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Method_Cheque</fullName>
+    <active>false</active>
+    <description>When Payment Method = Cheque, Bank Account Name and Cheque No must be filled</description>
+    <errorConditionFormula>AND( TEXT(Payment_Method__c) = &apos;Cheque&apos;, 
+     OR(
+         ISBLANK( Bank_Account_Name__c ) , 
+         ISBLANK( Cheque_No_Mode__c ) 
+      )
+)</errorConditionFormula>
+    <errorMessage>For payment method of Cheque, Bank Account Name or Cheque No can&apos;t be empty</errorMessage>
+</ValidationRule>

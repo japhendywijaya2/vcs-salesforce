@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duration_Month__c</fullName>
+    <externalId>false</externalId>
+    <label>Duration (Month)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>one</fullName>
+                <default>false</default>
+                <label>one</label>
+            </value>
+            <value>
+                <fullName>two</fullName>
+                <default>false</default>
+                <label>two</label>
+            </value>
+            <value>
+                <fullName>three</fullName>
+                <default>false</default>
+                <label>three</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

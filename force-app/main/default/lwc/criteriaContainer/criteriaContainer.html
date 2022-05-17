@@ -1,0 +1,17 @@
+<!-- child component for donationReconciliationLWC -->
+<template>
+    <template if:true={includeAll}>
+        <c-criteria-button-all 
+            key={getRandomId} 
+            common-label="All" 
+            onbutton_all_selected={handleButtonAllSelected}>
+        </c-criteria-button-all>
+    </template>
+    <template for:each={buttonDetails} for:item="buttonDetail">
+        <c-criteria-button 
+            key={buttonDetail.id} 
+            common-label={buttonDetail.label}
+            onbutton_selected={handleButtonSelected}>
+        </c-criteria-button>
+    </template>
+</template>

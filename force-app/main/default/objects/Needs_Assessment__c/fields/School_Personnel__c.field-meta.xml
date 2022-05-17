@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>School_Personnel__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>School personnel involved</inlineHelpText>
+    <label>School Personnel</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Needs Assessments (School Personnel)</relationshipLabel>
+    <relationshipName>Needs_Assessments1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

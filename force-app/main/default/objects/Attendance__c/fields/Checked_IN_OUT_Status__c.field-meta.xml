@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Checked_IN_OUT_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(Checked_Out__c )&amp;&amp; ISBLANK(Checked_In__c ) , &quot;OUT&quot;, IF(ISBLANK(Checked_Out__c ),&quot;IN&quot;,&quot;OUT&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Checked IN/OUT Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

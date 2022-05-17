@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donor_Name_Must_Belong_to_Donor_Account</fullName>
+    <active>true</active>
+    <description>Donor Name &amp; Donor Account must be correct</description>
+    <errorConditionFormula>Donor_Name__r.AccountId != Donor_Account__r.Id</errorConditionFormula>
+    <errorDisplayField>Donor_Name__c</errorDisplayField>
+    <errorMessage>Donor Name doesn&apos;t belong to the Donor Account</errorMessage>
+</ValidationRule>

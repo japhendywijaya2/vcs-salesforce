@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auditory_Environment__c</fullName>
+    <externalId>false</externalId>
+    <label>Auditory Environment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Background Noise</fullName>
+                <default>false</default>
+                <label>Background Noise</label>
+            </value>
+            <value>
+                <fullName>Outside Noise</fullName>
+                <default>false</default>
+                <label>Outside Noise</label>
+            </value>
+            <value>
+                <fullName>Construction Noise</fullName>
+                <default>false</default>
+                <label>Construction Noise</label>
+            </value>
+            <value>
+                <fullName>Traffic Noise</fullName>
+                <default>false</default>
+                <label>Traffic Noise</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Date__c</fullName>
+    <description>When this field is entered Enquiry Status is updated to Closed and Case File is created without intake record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the date entered when the Short Case Type is closed.</inlineHelpText>
+    <label>Closed Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

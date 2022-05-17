@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Follow_up__c</fullName>
+    <description>Current Follow-up (Doctor / Hospital)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Current Follow-up (Doctor / Hospital)</inlineHelpText>
+    <label>Current Follow-up</label>
+    <length>50</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

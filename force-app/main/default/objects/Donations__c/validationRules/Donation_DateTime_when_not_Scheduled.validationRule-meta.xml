@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donation_DateTime_when_not_Scheduled</fullName>
+    <active>false</active>
+    <description>Make Donation_Datetime__c field required only when 	Donation_Status__c is not scheduled</description>
+    <errorConditionFormula>AND(
+NOT( ISPICKVAL(Donation_Status__c, &apos;Scheduled&apos;) ),
+ISBLANK(Donation_Datetime__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Donation_Datetime__c</errorDisplayField>
+    <errorMessage>Complete this field.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Programme_Stage_Ended</fullName>
+        <field>Programme_Stage__c</field>
+        <literalValue>Ended</literalValue>
+        <name>Programme Stage: Ended</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Programme_Stage_Started</fullName>
+        <field>Programme_Stage__c</field>
+        <literalValue>Started</literalValue>
+        <name>Programme Stage: Started</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Programme%3A Ended</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Programme_Events__c.End_Date_Time__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Programme_Events__c.End_Date_Time__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Programme_Events__c.Programme_Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Completed,Cancelled</value>
+        </criteriaItems>
+        <description>VMS: Programme/Event</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Programme_Stage_Ended</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Programme_Events__c.End_Date_Time__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Programme%3A Started</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Programme_Events__c.Start_Date_Time__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Programme_Events__c.Start_Date_Time__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Programme_Events__c.Programme_Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Completed,Cancelled</value>
+        </criteriaItems>
+        <description>VMS: Programme/Event</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Programme_Stage_Started</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Programme_Events__c.Start_Date_Time__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

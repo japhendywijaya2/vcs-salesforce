@@ -1,0 +1,147 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-button variant="success" label="Show Modal" title="show modal" onclick={handleShowModal} ></lightning-button>
+    
+    <template if:true={isShowModal}>
+        <section role="dialog" tabindex="-1" aria-label="Meaningful description of the modal content" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+              <button onclick={handleShowModal} class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse">
+                <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true" >
+                  <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+                </svg>
+                <span class="slds-assistive-text">Cancel and close</span>
+              </button>
+              <div class="slds-modal__content slds-p-around_medium slds-modal__content_headless" id="modal-content-id-1">
+                <p>Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit officia tempor esse quis. Cillum sunt ad dolore quis
+                  aute consequat ipsum magna exercitation reprehenderit magna. Tempor cupidatat consequat elit dolor adipisicing.</p>
+                <p>Dolor eiusmod sunt ex incididunt cillum quis nostrud velit duis sit officia. Lorem aliqua enim laboris do dolor eiusmod officia. Mollit incididunt nisi consectetur esse laborum eiusmod pariatur proident. Eiusmod et adipisicing culpa deserunt nostrud
+                  ad veniam nulla aute est. Labore esse esse cupidatat amet velit id elit consequat minim ullamco mollit enim excepteur ea.</p>
+              </div>
+              <div class="slds-modal__footer">
+                <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={handleShowModal}>Cancel</button>
+                <button class="slds-button slds-button_brand">Save</button>
+              </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation" onclick={handleShowModal}></div>
+
+        
+
+    </template>
+
+
+    <div class="c-container mainDiv" >
+        <lightning-layout multiple-rows="true" >
+
+            <!-- Parameter Section -->
+            <lightning-layout-item padding="around-small" size="12">
+                <lightning-layout multiple-rows="true" horizontal-align="space">
+                    <!-- query section -->
+                    <lightning-layout-item padding="around-small" size="4">
+                        
+                        <table tabindex="-1" >
+                            <tr class="trKey">
+                                <td class="tdKey required-field">From</td>  
+                                <td><lightning-input type="date" name="From Date Filter" value={dateFromValue} onchange={handleDateFromChange} variant="label-hidden" required="true"></lightning-input></td>
+                            </tr>
+                            <tr class="trKey">
+                                <td class="tdKey required-field">To</td>  
+                                <td><lightning-input type="date" name="To Date Filter" value={dateToValue} max={maxDate} onchange={handleDateToChange} variant="label-hidden" required="true"></lightning-input></td>
+                            </tr>
+                            <tr class="trKey">
+                                <td class="tdKey required-field">Payment Method</td>  
+                                <td>
+                                    <lightning-radio-group name="Payment Method Filter"
+                                        options={paymentMethodOptions}
+                                        value={paymentMethodValue}
+                                        required
+                                        onchange={handlePaymentMethodChange}
+                                        variant="label-hidden"
+                                        type="button">
+                                    </lightning-radio-group>
+                                </td>
+                            </tr>
+                            <tr class="trKey">
+                                <td class="tdKey required-field">Donation Status</td>  
+                                <td >
+                                    <template if:true={paymentMethodValue}>
+                                        <c-criteria-container 
+                                            container-name="Donation_Status__c"
+                                            button-details={donationStatusUpdateDependent}
+                                            include-all
+                                            onquery_param_update={handleQueryParamUpdate}>
+                                        </c-criteria-container>
+                                    </template>
+                                    <template if:false={paymentMethodValue}>
+                                        <p class="slds-text-color_weak">Please select a payment method</p>
+                                    </template>
+                                    
+                                </td>
+                            </tr>
+                            <tr class="trKey">
+                                <td class="tdKey required-field">Frequency Type</td>  
+                                <td><!-- sldsValidatorIgnoreNextLine -->
+                                    <c-criteria-container 
+                                        container-name="Frequency_Type__c"
+                                        button-details={frequencyTypeOptions}
+                                        include-all
+                                        onquery_param_update={handleQueryParamUpdate}>
+                                    </c-criteria-container>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <div class="slds-align_absolute-center" style="height: 4rem">
+                            <lightning-button variant="success" label="Search Donations" title="Search Donations" onclick={searchDonationClick} ></lightning-button>
+                        </div>
+
+                    </lightning-layout-item>
+
+
+
+                    <!-- update value section -->
+                    <lightning-layout-item padding="around-small" size="4">
+                        <table>
+                            <tr>
+                                <td class="tdKey">Donation Status to Update</td>
+                                <td>
+                                    <lightning-combobox
+                                        name="Donation Status Update"
+                                        value={donStatusUpdateValue}
+                                        options={donationStatusUpdateDependent}
+                                        onchange={handleDonStatusUpdateChange} 
+                                        placeholder={donStatusUpdatePlaceholder}
+                                        variant="label-hidden">
+                                    </lightning-combobox>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="slds-align_absolute-center" style="height: 4rem">
+                            <lightning-button variant="success" label="Update Donations" title="Update Donations" onclick={updateDonationRecords} ></lightning-button>
+                        </div>
+                    </lightning-layout-item>
+                    
+                </lightning-layout>
+            </lightning-layout-item>
+
+
+
+
+            <lightning-layout-item flexibility="auto" padding="around-small" size="12">
+                <div >
+                    <lightning-datatable
+                            key-field="id"
+                            data={donationsListRetrieved}
+                            show-row-number-column
+                            row-number-offset={rowOffset}
+                            enable-infinite-loading
+                            is-loading
+                            onrowselection={handleRecordSelection}
+                            columns={donationsHeaders}>
+                    </lightning-datatable>
+                </div>
+            </lightning-layout-item>
+
+        </lightning-layout>
+    </div>
+</template>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Emotion__c</fullName>
+    <externalId>false</externalId>
+    <label>Client Emotion</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>5-Very stable</fullName>
+                <default>false</default>
+                <label>5-Very stable</label>
+            </value>
+            <value>
+                <fullName>4-Quite stable</fullName>
+                <default>false</default>
+                <label>4-Quite stable</label>
+            </value>
+            <value>
+                <fullName>3-Stable</fullName>
+                <default>false</default>
+                <label>3-Stable</label>
+            </value>
+            <value>
+                <fullName>2-Quite stable</fullName>
+                <default>false</default>
+                <label>2-Quite stable</label>
+            </value>
+            <value>
+                <fullName>1-Not stable</fullName>
+                <default>false</default>
+                <label>1-Not stable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

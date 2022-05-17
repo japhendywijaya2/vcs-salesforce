@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_for_Orientation_Invitation</fullName>
+        <description>Email for Orientation Invitation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Volunteer_Recruitment/Orientation_Invitation_V1</template>
+    </alerts>
+    <alerts>
+        <fullName>Orientation_Accepted</fullName>
+        <description>Orientation Accepted</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Volunteer_Recruitment/Orientation_Accepted</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Orientation_Invitation_Sent</fullName>
+        <field>Event_Status__c</field>
+        <literalValue>Invitation Sent</literalValue>
+        <name>Orientation: Invitation Sent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Orientation%3A Accepted</fullName>
+        <actions>
+            <name>Orientation_Accepted</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Event.Event_Status__c</field>
+            <operation>equals</operation>
+            <value>Accepted</value>
+        </criteriaItems>
+        <description>VMS: Email Notification when Orientation Invitation accepted by Volunteer,</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Orientation%3A Send Invitation Link</fullName>
+        <actions>
+            <name>Email_for_Orientation_Invitation</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Orientation_Invitation_Sent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Event.Send_Orientation_Invitation__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>VMS: Volunteer Recruitment</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

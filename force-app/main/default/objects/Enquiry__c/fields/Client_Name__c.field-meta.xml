@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is not blank, it means this record is tagged to the client record internally</inlineHelpText>
+    <label>Client Name</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Enquiries</relationshipLabel>
+    <relationshipName>Enquiries</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

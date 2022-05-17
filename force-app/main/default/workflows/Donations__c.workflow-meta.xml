@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_alert_on_Failed_donation</fullName>
+        <description>Email alert on Failed donation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Donor_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Email_Entered__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Donation/Donation_Failed</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_alert_on_Successful_donation</fullName>
+        <description>Email alert on Successful donation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Donor_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Email_Entered__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Donation/Donation_Sucessful</template>
+    </alerts>
+    <rules>
+        <fullName>Email for Donation Failure</fullName>
+        <actions>
+            <name>Email_alert_on_Failed_donation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Email should be triggered, when donation status is one of the failure status</description>
+        <formula>AND(
+ Electronic_Receipt_Sent__c = false,
+ OR(
+   TEXT( Donation_Status__c) = &apos;Cancelled&apos; , 
+   TEXT( Donation_Status__c) = &apos;Cheque Returned&apos; , 
+   TEXT( Donation_Status__c) = &apos;Giro Rejected&apos; , 
+   TEXT( Donation_Status__c) = &apos;CC Declined&apos; 
+ )
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email on Donation Successful</fullName>
+        <actions>
+            <name>Email_alert_on_Successful_donation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Donations__c.Donation_Status__c</field>
+            <operation>equals</operation>
+            <value>Cleared</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Donations__c.Electronic_Receipt_Sent__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Successful Email should trigger when Donation status is &quot;Cleared&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

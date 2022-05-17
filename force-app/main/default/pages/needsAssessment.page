@@ -1,0 +1,12 @@
+<apex:page sidebar="false" showHeader="false" lightningStyleSheets="true" standardController="Needs_Assessment__c">
+    <apex:form >
+        <apex:pageBlock title="Needs Assessment">
+            <apex:pageBlockSection columns="2">
+                <apex:inputField value="{!Needs_Assessment__c.Enquiry__r.ClientNameEntered__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    <apex:pageBlock >
+        <apex:relatedList list="Questionnaire_Items__r"></apex:relatedList>
+    </apex:pageBlock>
+</apex:page>

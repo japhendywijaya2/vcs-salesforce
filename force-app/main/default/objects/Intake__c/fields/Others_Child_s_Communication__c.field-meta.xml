@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Others_Child_s_Communication__c</fullName>
+    <description>Others Child&apos;s Preferred of Communication</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Others Child&apos;s Preferred of Communication</inlineHelpText>
+    <label>Others Child&apos;s Communication</label>
+    <length>50</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

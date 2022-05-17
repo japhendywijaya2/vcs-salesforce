@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Issue Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Spousal Relationship</fullName>
+                <default>false</default>
+                <label>Spousal Relationship</label>
+            </value>
+            <value>
+                <fullName>Family Relationship</fullName>
+                <default>false</default>
+                <label>Family Relationship</label>
+            </value>
+            <value>
+                <fullName>Psychosocial</fullName>
+                <default>false</default>
+                <label>Psychosocial</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Learning</fullName>
+                <default>false</default>
+                <label>Learning</label>
+            </value>
+            <value>
+                <fullName>Emotional</fullName>
+                <default>false</default>
+                <label>Emotional</label>
+            </value>
+            <value>
+                <fullName>Other issue</fullName>
+                <default>false</default>
+                <label>Other issue</label>
+            </value>
+            <value>
+                <fullName>Attitude</fullName>
+                <default>false</default>
+                <label>Attitude</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

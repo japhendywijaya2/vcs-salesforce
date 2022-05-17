@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level__c</fullName>
+    <externalId>false</externalId>
+    <label>Level</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N1</fullName>
+                <default>false</default>
+                <label>N1</label>
+            </value>
+            <value>
+                <fullName>N2</fullName>
+                <default>false</default>
+                <label>N2</label>
+            </value>
+            <value>
+                <fullName>K1</fullName>
+                <default>false</default>
+                <label>K1</label>
+            </value>
+            <value>
+                <fullName>K2</fullName>
+                <default>false</default>
+                <label>K2</label>
+            </value>
+            <value>
+                <fullName>Pri 1</fullName>
+                <default>false</default>
+                <label>Pri 1</label>
+            </value>
+            <value>
+                <fullName>Pri 2</fullName>
+                <default>false</default>
+                <label>Pri 2</label>
+            </value>
+            <value>
+                <fullName>Pri 3</fullName>
+                <default>false</default>
+                <label>Pri 3</label>
+            </value>
+            <value>
+                <fullName>Pri 4</fullName>
+                <default>false</default>
+                <label>Pri 4</label>
+            </value>
+            <value>
+                <fullName>Pri 5</fullName>
+                <default>false</default>
+                <label>Pri 5</label>
+            </value>
+            <value>
+                <fullName>Pri 6</fullName>
+                <default>false</default>
+                <label>Pri 6</label>
+            </value>
+            <value>
+                <fullName>Sec 1</fullName>
+                <default>false</default>
+                <label>Sec 1</label>
+            </value>
+            <value>
+                <fullName>Sec 2</fullName>
+                <default>false</default>
+                <label>Sec 2</label>
+            </value>
+            <value>
+                <fullName>Sec 3</fullName>
+                <default>false</default>
+                <label>Sec 3</label>
+            </value>
+            <value>
+                <fullName>Sec 4</fullName>
+                <default>false</default>
+                <label>Sec 4</label>
+            </value>
+            <value>
+                <fullName>Sec 5</fullName>
+                <default>false</default>
+                <label>Sec 5</label>
+            </value>
+            <value>
+                <fullName>PreU 1</fullName>
+                <default>false</default>
+                <label>PreU 1</label>
+            </value>
+            <value>
+                <fullName>PreU 2</fullName>
+                <default>false</default>
+                <label>PreU 2</label>
+            </value>
+            <value>
+                <fullName>PreU 3</fullName>
+                <default>false</default>
+                <label>PreU 3</label>
+            </value>
+            <value>
+                <fullName>Uni 1</fullName>
+                <default>false</default>
+                <label>Uni 1</label>
+            </value>
+            <value>
+                <fullName>Uni 2</fullName>
+                <default>false</default>
+                <label>Uni 2</label>
+            </value>
+            <value>
+                <fullName>Uni 3</fullName>
+                <default>false</default>
+                <label>Uni 3</label>
+            </value>
+            <value>
+                <fullName>Uni 4</fullName>
+                <default>false</default>
+                <label>Uni 4</label>
+            </value>
+            <value>
+                <fullName>Uni 5</fullName>
+                <default>false</default>
+                <label>Uni 5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

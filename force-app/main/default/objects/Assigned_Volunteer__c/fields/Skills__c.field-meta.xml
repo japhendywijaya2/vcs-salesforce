@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Skills__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Playing Musical Instruments&quot;), &quot;Playing Musical Instruments&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Other&quot;), &quot;Other&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Videography&quot;), &quot;Videography&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Hair Styling/Cutting&quot;), &quot;Hair Styling/Cutting&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Allied Health&quot;), &quot;Allied Health&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Class 3 - Driving&quot;), &quot;Class 3 - Driving&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Graphics Design&quot;), &quot;Graphics Design&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Food Handling&quot;), &quot;Food Handling&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Photography&quot;), &quot;Photography&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Cooking&quot;), &quot;Cooking&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Counselling&quot;), &quot;Counselling&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Vocational Skills&quot;), &quot;Vocational Skills&quot; + BR() , NULL) +
+IF(INCLUDES(Contact__r.Volunteer_Skill__c , &quot;Class 3&quot;), &quot;Class 3&quot;, NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Skills</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

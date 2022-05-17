@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Types_of_Meal_Availability__c</fullName>
+    <externalId>false</externalId>
+    <label>Types of Meal Availability</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Halal</fullName>
+                <default>false</default>
+                <label>Halal</label>
+            </value>
+            <value>
+                <fullName>Vegetarian</fullName>
+                <default>false</default>
+                <label>Vegetarian</label>
+            </value>
+            <value>
+                <fullName>Chinese</fullName>
+                <default>false</default>
+                <label>Chinese</label>
+            </value>
+            <value>
+                <fullName>Western</fullName>
+                <default>false</default>
+                <label>Western</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
