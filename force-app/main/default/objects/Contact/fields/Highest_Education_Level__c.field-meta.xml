@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Highest_Education_Level__c</fullName>
+    <externalId>false</externalId>
+    <label>Highest Education Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Degree</fullName>
+                <default>false</default>
+                <label>Degree</label>
+            </value>
+            <value>
+                <fullName>Diploma</fullName>
+                <default>false</default>
+                <label>Diploma</label>
+            </value>
+            <value>
+                <fullName>GCE A</fullName>
+                <default>false</default>
+                <label>GCE A</label>
+            </value>
+            <value>
+                <fullName>GCE O</fullName>
+                <default>false</default>
+                <label>GCE O</label>
+            </value>
+            <value>
+                <fullName>Higher Nitec</fullName>
+                <default>false</default>
+                <label>Higher Nitec</label>
+            </value>
+            <value>
+                <fullName>Honours</fullName>
+                <default>false</default>
+                <label>Honours</label>
+            </value>
+            <value>
+                <fullName>ITE/NTC</fullName>
+                <default>false</default>
+                <label>ITE/NTC</label>
+            </value>
+            <value>
+                <fullName>Junior College - Year 1</fullName>
+                <default>false</default>
+                <label>Junior College - Year 1</label>
+            </value>
+            <value>
+                <fullName>Junior College - Year 2</fullName>
+                <default>false</default>
+                <label>Junior College - Year 2</label>
+            </value>
+            <value>
+                <fullName>Masters</fullName>
+                <default>false</default>
+                <label>Masters</label>
+            </value>
+            <value>
+                <fullName>Nitec</fullName>
+                <default>false</default>
+                <label>Nitec</label>
+            </value>
+            <value>
+                <fullName>N Levels</fullName>
+                <default>false</default>
+                <label>N Levels</label>
+            </value>
+            <value>
+                <fullName>No Formal Education</fullName>
+                <default>false</default>
+                <label>No Formal Education</label>
+            </value>
+            <value>
+                <fullName>PHd</fullName>
+                <default>false</default>
+                <label>PHd</label>
+            </value>
+            <value>
+                <fullName>Polytechnic</fullName>
+                <default>false</default>
+                <label>Polytechnic</label>
+            </value>
+            <value>
+                <fullName>Post Graduate</fullName>
+                <default>false</default>
+                <label>Post Graduate</label>
+            </value>
+            <value>
+                <fullName>Primary</fullName>
+                <default>false</default>
+                <label>Primary</label>
+            </value>
+            <value>
+                <fullName>Primary 1</fullName>
+                <default>false</default>
+                <label>Primary 1</label>
+            </value>
+            <value>
+                <fullName>Primary 2</fullName>
+                <default>false</default>
+                <label>Primary 2</label>
+            </value>
+            <value>
+                <fullName>Primary 3</fullName>
+                <default>false</default>
+                <label>Primary 3</label>
+            </value>
+            <value>
+                <fullName>Primary 4</fullName>
+                <default>false</default>
+                <label>Primary 4</label>
+            </value>
+            <value>
+                <fullName>Primary 5</fullName>
+                <default>false</default>
+                <label>Primary 5</label>
+            </value>
+            <value>
+                <fullName>Primary 6</fullName>
+                <default>false</default>
+                <label>Primary 6</label>
+            </value>
+            <value>
+                <fullName>PSLE</fullName>
+                <default>false</default>
+                <label>PSLE</label>
+            </value>
+            <value>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+                <label>Secondary</label>
+            </value>
+            <value>
+                <fullName>Secondary 1 – Express</fullName>
+                <default>false</default>
+                <label>Secondary 1 – Express</label>
+            </value>
+            <value>
+                <fullName>Secondary 1 – Normal (Academic)</fullName>
+                <default>false</default>
+                <label>Secondary 1 – Normal (Academic)</label>
+            </value>
+            <value>
+                <fullName>Secondary 1 – Normal (Technical)</fullName>
+                <default>false</default>
+                <label>Secondary 1 – Normal (Technical)</label>
+            </value>
+            <value>
+                <fullName>Secondary 2 – Express</fullName>
+                <default>false</default>
+                <label>Secondary 2 – Express</label>
+            </value>
+            <value>
+                <fullName>Secondary 2 – Normal (Academic)</fullName>
+                <default>false</default>
+                <label>Secondary 2 – Normal (Academic)</label>
+            </value>
+            <value>
+                <fullName>Secondary 2 – Normal (Technical)</fullName>
+                <default>false</default>
+                <label>Secondary 2 – Normal (Technical)</label>
+            </value>
+            <value>
+                <fullName>Secondary 3 – Express</fullName>
+                <default>false</default>
+                <label>Secondary 3 – Express</label>
+            </value>
+            <value>
+                <fullName>Secondary 3 – Normal (Academic)</fullName>
+                <default>false</default>
+                <label>Secondary 3 – Normal (Academic)</label>
+            </value>
+            <value>
+                <fullName>Secondary 3 – Normal (Technical)</fullName>
+                <default>false</default>
+                <label>Secondary 3 – Normal (Technical)</label>
+            </value>
+            <value>
+                <fullName>Secondary 4 – Express</fullName>
+                <default>false</default>
+                <label>Secondary 4 – Express</label>
+            </value>
+            <value>
+                <fullName>Secondary 4 – Normal (Academic)</fullName>
+                <default>false</default>
+                <label>Secondary 4 – Normal (Academic)</label>
+            </value>
+            <value>
+                <fullName>Secondary 4 – Normal (Technical)</fullName>
+                <default>false</default>
+                <label>Secondary 4 – Normal (Technical)</label>
+            </value>
+            <value>
+                <fullName>Secondary 5 – Normal (Academic)</fullName>
+                <default>false</default>
+                <label>Secondary 5 – Normal (Academic)</label>
+            </value>
+            <value>
+                <fullName>Tertiary</fullName>
+                <default>false</default>
+                <label>Tertiary</label>
+            </value>
+            <value>
+                <fullName>Year 1 – Vocational Institute</fullName>
+                <default>false</default>
+                <label>Year 1 – Vocational Institute</label>
+            </value>
+            <value>
+                <fullName>Year 2 – Vocational Institute</fullName>
+                <default>false</default>
+                <label>Year 2 – Vocational Institute</label>
+            </value>
+            <value>
+                <fullName>Year 3 – Vocational Institute</fullName>
+                <default>false</default>
+                <label>Year 3 – Vocational Institute</label>
+            </value>
+            <value>
+                <fullName>Year 4 – Vocational Institute</fullName>
+                <default>false</default>
+                <label>Year 4 – Vocational Institute</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

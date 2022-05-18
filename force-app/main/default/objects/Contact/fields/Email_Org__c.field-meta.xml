@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Org__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>This is the personal Email id</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field must strictly be used for entering the personal email</inlineHelpText>
+    <label>Email (Org)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Email</type>
+    <unique>true</unique>
+</CustomField>

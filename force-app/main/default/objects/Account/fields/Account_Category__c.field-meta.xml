@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ultimate Beneficary</fullName>
+                <default>false</default>
+                <label>Ultimate Beneficary</label>
+            </value>
+            <value>
+                <fullName>Donor - Time</fullName>
+                <default>false</default>
+                <label>Donor - Time</label>
+            </value>
+            <value>
+                <fullName>Donor - Money</fullName>
+                <default>false</default>
+                <label>Donor - Money</label>
+            </value>
+            <value>
+                <fullName>Donor - Inkind</fullName>
+                <default>false</default>
+                <label>Donor - Inkind</label>
+            </value>
+            <value>
+                <fullName>Beneficiary - Inkind</fullName>
+                <default>false</default>
+                <label>Beneficiary - Inkind</label>
+            </value>
+            <value>
+                <fullName>Recipient- In Kind (Bread)</fullName>
+                <default>false</default>
+                <label>Recipient- In Kind (Bread)</label>
+            </value>
+            <value>
+                <fullName>Recipient- In Kind (Others)</fullName>
+                <default>false</default>
+                <label>Recipient- In Kind (Others)</label>
+            </value>
+            <value>
+                <fullName>Recipient- Money</fullName>
+                <default>false</default>
+                <label>Recipient- Money</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

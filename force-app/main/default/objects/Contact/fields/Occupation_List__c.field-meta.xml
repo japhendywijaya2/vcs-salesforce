@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Occupation_List__c</fullName>
+    <externalId>false</externalId>
+    <label>Occupation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Retiree</fullName>
+                <default>false</default>
+                <label>Retiree</label>
+            </value>
+            <value>
+                <fullName>Legislators, senior officials and managers</fullName>
+                <default>false</default>
+                <label>Legislators, senior officials and managers</label>
+            </value>
+            <value>
+                <fullName>Professionals</fullName>
+                <default>false</default>
+                <label>Professionals</label>
+            </value>
+            <value>
+                <fullName>Associate professionals and technicians</fullName>
+                <default>false</default>
+                <label>Associate professionals and technicians</label>
+            </value>
+            <value>
+                <fullName>Clerical support workers</fullName>
+                <default>false</default>
+                <label>Clerical support workers</label>
+            </value>
+            <value>
+                <fullName>Service and sales workers</fullName>
+                <default>false</default>
+                <label>Service and sales workers</label>
+            </value>
+            <value>
+                <fullName>Agricultural and fishery workers</fullName>
+                <default>false</default>
+                <label>Agricultural and fishery workers</label>
+            </value>
+            <value>
+                <fullName>Pland and machine operators and assemblers</fullName>
+                <default>false</default>
+                <label>Pland and machine operators and assemblers</label>
+            </value>
+            <value>
+                <fullName>Cleaners, labourers and related workers</fullName>
+                <default>false</default>
+                <label>Cleaners, labourers and related workers</label>
+            </value>
+            <value>
+                <fullName>Workers not elsewhere classified</fullName>
+                <default>false</default>
+                <label>Workers not elsewhere classified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

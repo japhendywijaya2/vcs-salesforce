@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hearing_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Hearing Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hearing</fullName>
+                <default>true</default>
+                <label>Hearing</label>
+            </value>
+            <value>
+                <fullName>Hard-on-Hearing</fullName>
+                <default>false</default>
+                <label>Hard-on-Hearing</label>
+            </value>
+            <value>
+                <fullName>Deaf</fullName>
+                <default>false</default>
+                <label>Deaf</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

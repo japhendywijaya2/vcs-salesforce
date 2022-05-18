@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Donors_Today</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>DonorActivity__c</columns>
+    <columns>Donor_Class__c</columns>
+    <columns>Last_Donation_Date__c</columns>
+    <columns>isTaxRecipient__c</columns>
+    <columns>Frequency_Preference__c</columns>
+    <columns>Total_Donation_Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Donor__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>New Donors Today</label>
+</ListView>

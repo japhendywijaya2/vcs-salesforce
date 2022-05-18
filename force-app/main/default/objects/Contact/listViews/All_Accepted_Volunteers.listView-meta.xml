@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Accepted_Volunteers</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Volunteer__c</columns>
+    <columns>Volunteer_Status__c</columns>
+    <columns>Assignment_Status__c</columns>
+    <columns>Volunteer_Activity_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.CREATED_DATE</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Volunteer__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Volunteer_Status__c</field>
+        <operation>equals</operation>
+        <value>Accepted</value>
+    </filters>
+    <label>All Accepted Volunteers</label>
+</ListView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Volunteering_area_s_of_interest__c</fullName>
+    <externalId>false</externalId>
+    <label>Volunteering area(s) of interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Art and Craft</fullName>
+                <default>false</default>
+                <label>Art and Craft</label>
+            </value>
+            <value>
+                <fullName>Cooking</fullName>
+                <default>false</default>
+                <label>Cooking</label>
+            </value>
+            <value>
+                <fullName>Dance and Music</fullName>
+                <default>false</default>
+                <label>Dance and Music</label>
+            </value>
+            <value>
+                <fullName>Graphics Design</fullName>
+                <default>false</default>
+                <label>Graphics Design</label>
+            </value>
+            <value>
+                <fullName>Gardening</fullName>
+                <default>false</default>
+                <label>Gardening</label>
+            </value>
+            <value>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+                <label>Information Technology</label>
+            </value>
+            <value>
+                <fullName>Photograhy</fullName>
+                <default>false</default>
+                <label>Photograhy</label>
+            </value>
+            <value>
+                <fullName>Playing Musical Instrument</fullName>
+                <default>false</default>
+                <label>Playing Musical Instrument</label>
+            </value>
+            <value>
+                <fullName>Sports</fullName>
+                <default>false</default>
+                <label>Sports</label>
+            </value>
+            <value>
+                <fullName>Others (please specify below)</fullName>
+                <default>false</default>
+                <label>Others (please specify below)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

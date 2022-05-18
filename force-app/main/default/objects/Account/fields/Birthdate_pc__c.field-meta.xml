@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Birthdate_pc__c</fullName>
+    <description>Test Carol</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Test by Carol to rectify issue with double birthdate in System.</inlineHelpText>
+    <label>Birthdate__pc [DO NOT USE]</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification_of_Occupations__c</fullName>
+    <externalId>false</externalId>
+    <label>Classification of Occupations</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>G1 Legislators, Senior Officials and Managers</fullName>
+                <default>false</default>
+                <label>G1 Legislators, Senior Officials and Managers</label>
+            </value>
+            <value>
+                <fullName>G2 Professionals</fullName>
+                <default>false</default>
+                <label>G2 Professionals</label>
+            </value>
+            <value>
+                <fullName>G3 Associate Professionals and Technicians</fullName>
+                <default>false</default>
+                <label>G3 Associate Professionals and Technicians</label>
+            </value>
+            <value>
+                <fullName>G4 Clerical Support Workers</fullName>
+                <default>false</default>
+                <label>G4 Clerical Support Workers</label>
+            </value>
+            <value>
+                <fullName>G5 Service and Sales Workers</fullName>
+                <default>false</default>
+                <label>G5 Service and Sales Workers</label>
+            </value>
+            <value>
+                <fullName>G6 Agricultural and Fishery Workers</fullName>
+                <default>false</default>
+                <label>G6 Agricultural and Fishery Workers</label>
+            </value>
+            <value>
+                <fullName>G7 Craftsmen and Related Trades Workers</fullName>
+                <default>false</default>
+                <label>G7 Craftsmen and Related Trades Workers</label>
+            </value>
+            <value>
+                <fullName>G8 Plant and Machine Operators and Assemblers</fullName>
+                <default>false</default>
+                <label>G8 Plant and Machine Operators and Assemblers</label>
+            </value>
+            <value>
+                <fullName>G9 Cleaners, Labourers and Related Workers</fullName>
+                <default>false</default>
+                <label>G9 Cleaners, Labourers and Related Workers</label>
+            </value>
+            <value>
+                <fullName>G10 Workers Not Elsewhere Classified</fullName>
+                <default>false</default>
+                <label>G10 Workers Not Elsewhere Classified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

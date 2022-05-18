@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Sub_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Sub Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Children Day Care Centre</fullName>
+                <default>false</default>
+                <label>Children Day Care Centre</label>
+            </value>
+            <value>
+                <fullName>Children Home</fullName>
+                <default>false</default>
+                <label>Children Home</label>
+            </value>
+            <value>
+                <fullName>Nursing Home</fullName>
+                <default>false</default>
+                <label>Nursing Home</label>
+            </value>
+            <value>
+                <fullName>Rehabilitation Centre</fullName>
+                <default>false</default>
+                <label>Rehabilitation Centre</label>
+            </value>
+            <value>
+                <fullName>Needy Shelter</fullName>
+                <default>false</default>
+                <label>Needy Shelter</label>
+            </value>
+            <value>
+                <fullName>Family Service Centre</fullName>
+                <default>false</default>
+                <label>Family Service Centre</label>
+            </value>
+            <value>
+                <fullName>Senior Activity Centre</fullName>
+                <default>false</default>
+                <label>Senior Activity Centre</label>
+            </value>
+            <value>
+                <fullName>Residents Committee</fullName>
+                <default>false</default>
+                <label>Residents Committee</label>
+            </value>
+            <value>
+                <fullName>School</fullName>
+                <default>false</default>
+                <label>School</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

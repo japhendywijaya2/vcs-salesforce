@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Citizenship__c</fullName>
+    <externalId>false</externalId>
+    <label>Citizenship</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dependent Pass</fullName>
+                <default>false</default>
+                <label>Dependent Pass</label>
+            </value>
+            <value>
+                <fullName>Employment Pass (professional)</fullName>
+                <default>false</default>
+                <label>Employment Pass (professional)</label>
+            </value>
+            <value>
+                <fullName>Long Term Visit Pass/Plus (TLVP / LTVP+)</fullName>
+                <default>false</default>
+                <label>Long Term Visit Pass/Plus (TLVP / LTVP+)</label>
+            </value>
+            <value>
+                <fullName>Overstayer</fullName>
+                <default>false</default>
+                <label>Overstayer</label>
+            </value>
+            <value>
+                <fullName>Singapore Citizen</fullName>
+                <default>false</default>
+                <label>Singapore Citizen</label>
+            </value>
+            <value>
+                <fullName>Singapore PR</fullName>
+                <default>false</default>
+                <label>Singapore PR</label>
+            </value>
+            <value>
+                <fullName>Social Visit Pass</fullName>
+                <default>false</default>
+                <label>Social Visit Pass</label>
+            </value>
+            <value>
+                <fullName>S Pass</fullName>
+                <default>false</default>
+                <label>S Pass</label>
+            </value>
+            <value>
+                <fullName>Special Pass</fullName>
+                <default>false</default>
+                <label>Special Pass</label>
+            </value>
+            <value>
+                <fullName>Stateless</fullName>
+                <default>false</default>
+                <label>Stateless</label>
+            </value>
+            <value>
+                <fullName>Student Pass</fullName>
+                <default>false</default>
+                <label>Student Pass</label>
+            </value>
+            <value>
+                <fullName>Training WP (OJT)</fullName>
+                <default>false</default>
+                <label>Training WP (OJT)</label>
+            </value>
+            <value>
+                <fullName>Undocumented</fullName>
+                <default>false</default>
+                <label>Undocumented</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Work Permit</fullName>
+                <default>false</default>
+                <label>Work Permit</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

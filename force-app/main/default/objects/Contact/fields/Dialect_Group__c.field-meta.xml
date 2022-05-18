@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dialect_Group__c</fullName>
+    <externalId>false</externalId>
+    <label>Dialect Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cantonese</fullName>
+                <default>false</default>
+                <label>Cantonese</label>
+            </value>
+            <value>
+                <fullName>Hainanese</fullName>
+                <default>false</default>
+                <label>Hainanese</label>
+            </value>
+            <value>
+                <fullName>Hakka</fullName>
+                <default>false</default>
+                <label>Hakka</label>
+            </value>
+            <value>
+                <fullName>Hockchew</fullName>
+                <default>false</default>
+                <label>Hockchew</label>
+            </value>
+            <value>
+                <fullName>Hokkien</fullName>
+                <default>false</default>
+                <label>Hokkien</label>
+            </value>
+            <value>
+                <fullName>Teochew</fullName>
+                <default>false</default>
+                <label>Teochew</label>
+            </value>
+            <value>
+                <fullName>Others (please specific)</fullName>
+                <default>false</default>
+                <label>Others (please specific)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

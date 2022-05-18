@@ -5,9 +5,6 @@
         <description>Email alert submit referral ISS for approver</description>
         <protected>false</protected>
         <recipients>
-            <type>accountOwner</type>
-        </recipients>
-        <recipients>
             <field>Approver_Email__c</field>
             <type>email</type>
         </recipients>
@@ -18,9 +15,6 @@
         <fullName>Email_alert_submit_referral_ISS_for</fullName>
         <description>Email alert submit referral ISS for verifier</description>
         <protected>false</protected>
-        <recipients>
-            <type>accountOwner</type>
-        </recipients>
         <recipients>
             <field>Verifier_Email__c</field>
             <type>email</type>
@@ -50,12 +44,12 @@
             <value>null</value>
         </criteriaItems>
         <criteriaItems>
-            <field>Intake__c.Verifier_Name__c</field>
+            <field>Intake__c.Approver_Name__c</field>
             <operation>notEqual</operation>
             <value>null</value>
         </criteriaItems>
         <criteriaItems>
-            <field>Intake__c.Approver_Name__c</field>
+            <field>Intake__c.Verifier_Name__c</field>
             <operation>notEqual</operation>
             <value>null</value>
         </criteriaItems>

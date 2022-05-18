@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_not_disclose__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check for &apos;Do not disclose donor identity&quot;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check if Donor does not want to disclose Identity</inlineHelpText>
+    <label>Do not disclose</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

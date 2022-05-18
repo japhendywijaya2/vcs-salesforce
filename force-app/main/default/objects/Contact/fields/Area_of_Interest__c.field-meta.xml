@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area_of_Interest__c</fullName>
+    <description>was &quot;Volunteering Skills&quot;</description>
+    <externalId>false</externalId>
+    <label>Area of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bread Distribution (Weekly)</fullName>
+                <default>false</default>
+                <label>Bread Distribution (Weekly)</label>
+            </value>
+            <value>
+                <fullName>Bread Distribution (Standby)</fullName>
+                <default>false</default>
+                <label>Bread Distribution (Standby)</label>
+            </value>
+            <value>
+                <fullName>Self Collection Centres</fullName>
+                <default>false</default>
+                <label>Self Collection Centres</label>
+            </value>
+            <value>
+                <fullName>Food Goodie Bag (Packing in Warehouse)</fullName>
+                <default>false</default>
+                <label>Food Goodie Bag (Packing in Warehouse)</label>
+            </value>
+            <value>
+                <fullName>Food Goodie Bag (Food Drives)</fullName>
+                <default>false</default>
+                <label>Food Goodie Bag (Food Drives)</label>
+            </value>
+            <value>
+                <fullName>Toys from the Heart</fullName>
+                <default>false</default>
+                <label>Toys from the Heart</label>
+            </value>
+            <value>
+                <fullName>Birthdays from the Heart</fullName>
+                <default>false</default>
+                <label>Birthdays from the Heart</label>
+            </value>
+            <value>
+                <fullName>Admin Support (Office)</fullName>
+                <default>false</default>
+                <label>Admin Support (Office)</label>
+            </value>
+            <value>
+                <fullName>Events (Ad-hoc)</fullName>
+                <default>false</default>
+                <label>Events (Ad-hoc)</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

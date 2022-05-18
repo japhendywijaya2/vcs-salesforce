@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_Programmes__c</fullName>
+    <externalId>false</externalId>
+    <label>Preferred Programmes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administrative support at NKF Centre</fullName>
+                <default>false</default>
+                <label>Administrative support at NKF Centre</label>
+            </value>
+            <value>
+                <fullName>Befriending Programme</fullName>
+                <default>false</default>
+                <label>Befriending Programme</label>
+            </value>
+            <value>
+                <fullName>Enrichment Programme</fullName>
+                <default>false</default>
+                <label>Enrichment Programme</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <label>Events</label>
+            </value>
+            <value>
+                <fullName>Grains of Hope Programme</fullName>
+                <default>false</default>
+                <label>Grains of Hope Programme</label>
+            </value>
+            <value>
+                <fullName>Home Aid (House Painting &amp; House Cleaning)</fullName>
+                <default>false</default>
+                <label>Home Aid (House Painting &amp; House Cleaning)</label>
+            </value>
+            <value>
+                <fullName>Kidney Discovery CentreGuide</fullName>
+                <default>false</default>
+                <label>Kidney Discovery CentreGuide</label>
+            </value>
+            <value>
+                <fullName>Orientation Officer</fullName>
+                <default>false</default>
+                <label>Orientation Officer</label>
+            </value>
+            <value>
+                <fullName>Patient Escort</fullName>
+                <default>false</default>
+                <label>Patient Escort</label>
+            </value>
+            <value>
+                <fullName>Translation</fullName>
+                <default>false</default>
+                <label>Translation</label>
+            </value>
+            <value>
+                <fullName>Professional Skills</fullName>
+                <default>false</default>
+                <label>Professional Skills</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

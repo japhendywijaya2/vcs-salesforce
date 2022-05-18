@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_of_Adults__c</fullName>
+    <description>Number of adults in this family</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter number of adults for this family member</inlineHelpText>
+    <label>No of Adults</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

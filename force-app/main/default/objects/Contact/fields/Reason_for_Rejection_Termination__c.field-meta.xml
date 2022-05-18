@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Rejection_Termination__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Rejection/Termination</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Language incompatibility</fullName>
+                <default>false</default>
+                <label>Language incompatibility</label>
+            </value>
+            <value>
+                <fullName>Mismatch of intent</fullName>
+                <default>false</default>
+                <label>Mismatch of intent</label>
+            </value>
+            <value>
+                <fullName>Criminal record</fullName>
+                <default>false</default>
+                <label>Criminal record</label>
+            </value>
+            <value>
+                <fullName>Health issues</fullName>
+                <default>false</default>
+                <label>Health issues</label>
+            </value>
+            <value>
+                <fullName>Incompatible volunteering schedule</fullName>
+                <default>false</default>
+                <label>Incompatible volunteering schedule</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

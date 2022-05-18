@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Locality__c</fullName>
+    <description>Locality in the respective areas in Singapore</description>
+    <externalId>false</externalId>
+    <label>Locality</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Area__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marina</fullName>
+                <default>false</default>
+                <label>Marina</label>
+            </value>
+            <value>
+                <fullName>Shenton Way</fullName>
+                <default>false</default>
+                <label>Shenton Way</label>
+            </value>
+            <value>
+                <fullName>Harborfront</fullName>
+                <default>false</default>
+                <label>Harborfront</label>
+            </value>
+            <value>
+                <fullName>Clementi</fullName>
+                <default>false</default>
+                <label>Clementi</label>
+            </value>
+            <value>
+                <fullName>Bukit Merah</fullName>
+                <default>false</default>
+                <label>Bukit Merah</label>
+            </value>
+            <value>
+                <fullName>City Hall</fullName>
+                <default>false</default>
+                <label>City Hall</label>
+            </value>
+            <value>
+                <fullName>Bugis</fullName>
+                <default>false</default>
+                <label>Bugis</label>
+            </value>
+            <value>
+                <fullName>Jalan Besar</fullName>
+                <default>false</default>
+                <label>Jalan Besar</label>
+            </value>
+            <value>
+                <fullName>Orchard</fullName>
+                <default>false</default>
+                <label>Orchard</label>
+            </value>
+            <value>
+                <fullName>Holland</fullName>
+                <default>false</default>
+                <label>Holland</label>
+            </value>
+            <value>
+                <fullName>Novena</fullName>
+                <default>false</default>
+                <label>Novena</label>
+            </value>
+            <value>
+                <fullName>Toa Payoh</fullName>
+                <default>false</default>
+                <label>Toa Payoh</label>
+            </value>
+            <value>
+                <fullName>Kallang</fullName>
+                <default>false</default>
+                <label>Kallang</label>
+            </value>
+            <value>
+                <fullName>Geylang</fullName>
+                <default>false</default>
+                <label>Geylang</label>
+            </value>
+            <value>
+                <fullName>East Coast</fullName>
+                <default>false</default>
+                <label>East Coast</label>
+            </value>
+            <value>
+                <fullName>Bedok</fullName>
+                <default>false</default>
+                <label>Bedok</label>
+            </value>
+            <value>
+                <fullName>Changi</fullName>
+                <default>false</default>
+                <label>Changi</label>
+            </value>
+            <value>
+                <fullName>Tampines - Pasir Ris</fullName>
+                <default>false</default>
+                <label>Tampines - Pasir Ris</label>
+            </value>
+            <value>
+                <fullName>Sengkang - Serangoon</fullName>
+                <default>false</default>
+                <label>Sengkang - Serangoon</label>
+            </value>
+            <value>
+                <fullName>Ang Mo Kio - Upper Thomson</fullName>
+                <default>false</default>
+                <label>Ang Mo Kio - Upper Thomson</label>
+            </value>
+            <value>
+                <fullName>Upper Bukit Timah - Ulu Pandan</fullName>
+                <default>false</default>
+                <label>Upper Bukit Timah - Ulu Pandan</label>
+            </value>
+            <value>
+                <fullName>Jurong</fullName>
+                <default>false</default>
+                <label>Jurong</label>
+            </value>
+            <value>
+                <fullName>Bukit Panjang - Bukit Batok</fullName>
+                <default>false</default>
+                <label>Bukit Panjang - Bukit Batok</label>
+            </value>
+            <value>
+                <fullName>Choa Chu Kang</fullName>
+                <default>false</default>
+                <label>Choa Chu Kang</label>
+            </value>
+            <value>
+                <fullName>Woodlands</fullName>
+                <default>false</default>
+                <label>Woodlands</label>
+            </value>
+            <value>
+                <fullName>Yishun</fullName>
+                <default>false</default>
+                <label>Yishun</label>
+            </value>
+            <value>
+                <fullName>Sembawang</fullName>
+                <default>false</default>
+                <label>Sembawang</label>
+            </value>
+            <value>
+                <fullName>Seletar - Yio Chu Kang</fullName>
+                <default>false</default>
+                <label>Seletar - Yio Chu Kang</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Central</controllingFieldValue>
+            <valueName>City Hall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central</controllingFieldValue>
+            <valueName>Bugis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central</controllingFieldValue>
+            <valueName>Jalan Besar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central</controllingFieldValue>
+            <valueName>Orchard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central</controllingFieldValue>
+            <valueName>Holland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central</controllingFieldValue>
+            <valueName>Novena</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Central</controllingFieldValue>
+            <valueName>Toa Payoh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East</controllingFieldValue>
+            <valueName>Kallang</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East</controllingFieldValue>
+            <valueName>Geylang</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East</controllingFieldValue>
+            <valueName>East Coast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East</controllingFieldValue>
+            <valueName>Bedok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East</controllingFieldValue>
+            <valueName>Changi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East</controllingFieldValue>
+            <valueName>Tampines - Pasir Ris</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North</controllingFieldValue>
+            <valueName>Yishun</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North</controllingFieldValue>
+            <valueName>Sembawang</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North-East</controllingFieldValue>
+            <valueName>Sengkang - Serangoon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North-East</controllingFieldValue>
+            <valueName>Seletar - Yio Chu Kang</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North-West</controllingFieldValue>
+            <valueName>Bukit Panjang - Bukit Batok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North-West</controllingFieldValue>
+            <valueName>Choa Chu Kang</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North-West</controllingFieldValue>
+            <valueName>Woodlands</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South</controllingFieldValue>
+            <valueName>Marina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South</controllingFieldValue>
+            <valueName>Shenton Way</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South</controllingFieldValue>
+            <valueName>Harborfront</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South-West</controllingFieldValue>
+            <valueName>Clementi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South-West</controllingFieldValue>
+            <valueName>Bukit Merah</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West</controllingFieldValue>
+            <valueName>Jurong</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_for_DOB</fullName>
+    <active>false</active>
+    <errorConditionFormula>((TODAY() - Birthdate ) / 365.2425) &lt; 0</errorConditionFormula>
+    <errorDisplayField>Birthdate</errorDisplayField>
+    <errorMessage>Please enter valid DOB</errorMessage>
+</ValidationRule>

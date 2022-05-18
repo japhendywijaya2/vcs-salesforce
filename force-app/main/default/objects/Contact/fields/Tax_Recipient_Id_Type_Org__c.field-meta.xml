@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Recipient_Id_Type_Org__c</fullName>
+    <externalId>false</externalId>
+    <label>Tax Recipient Id Type (Org)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FIN</fullName>
+                <default>false</default>
+                <label>FIN</label>
+            </value>
+            <value>
+                <fullName>UEN</fullName>
+                <default>false</default>
+                <label>UEN</label>
+            </value>
+            <value>
+                <fullName>UEN-Business</fullName>
+                <default>false</default>
+                <label>UEN-Business</label>
+            </value>
+            <value>
+                <fullName>UEN-Local Company</fullName>
+                <default>false</default>
+                <label>UEN-Local Company</label>
+            </value>
+            <value>
+                <fullName>UEN-Others</fullName>
+                <default>false</default>
+                <label>UEN-Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
